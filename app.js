@@ -32,3 +32,12 @@ function fetchBooks() {
       bookList.appendChild(bookDiv);
     });
   }
+  document.getElementById('books').addEventListener('click', (e) => {
+    if (e.target.classList.contains('view-details')) {
+      const bookId = e.target.dataset.id;
+      fetch(`${apiURL}/${bookId}`)
+        .then(response => response.json())
+        .then(data => displayDetails(data))
+        .catch(error => console.error('Error fetching book details:', error));
+    }
+  });
