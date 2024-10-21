@@ -49,3 +49,29 @@ function fetchBooks() {
       <p>Review: ${book.review}</p>
     `;
   }
+  document.getElementById('review-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    const newBook = {
+      title: document.getElementById('book-title').value,
+      author: document.getElementById('book-author').value,
+      review: document.getElementById('book-review').value
+    };
+
+    fetch(apiURL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(newBook)
+    })
+      .then(response => response.json())
+      .then(data => {
+        // Clear form and refresh book list
+        e.target.reset();
+        fetchBooks();
+      })
+      .catch(error => console.error('Error adding review:', error));
+  });
+
+  // Initialize by fetching and displaying books
+  fetchBooks();
+});
