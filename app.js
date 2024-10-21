@@ -1,5 +1,5 @@
 {
-    "books": [
+    "books" [
       { "id": 1, "title": "Book One", "author": "Author One", "review": "Great read!" },
       { "id": 2, "title": "Book Two", "author": "Author Two", "review": "Informative!" }
     ]
@@ -65,13 +65,11 @@ function fetchBooks() {
     })
       .then(response => response.json())
       .then(data => {
-        // Clear form and refresh book list
         e.target.reset();
         fetchBooks();
       })
       .catch(error => console.error('Error adding review:', error));
   });
 
-  // Initialize by fetching and displaying books
   fetchBooks();
 });
