@@ -1,6 +1,52 @@
 {
-    "ramen": [
-      { "id": 1, "name": "Shoyu Ramen", "rating": 5 },
-      { "id": 2, "name": "Miso Ramen", "rating": 4 }
-    ]
-  }
+  "books": [
+    {
+      "id": "1",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "review": "A classic novel!"
+    },
+    {
+      "id": "2",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "review": "A powerful story."
+    },
+    {
+      "id": "3",
+      "title": "1984",
+      "author": "George Orwell",
+      "review": "A thought-provoking read."
+    },
+    {
+      "id": "4",
+      "title": "Moby Dick",
+      "author": "Herman Melville",
+      "review": "An epic tale."
+    },
+    {
+      "id": "5",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "review": "A delightful romance."
+    },
+    {
+      "id": "c8d3",
+      "title": "Harry potter",
+      "author": "jk rowling",
+      "review": "nice book"
+    },
+    {
+      "id": "12e6",
+      "title": "Harry potter",
+      "author": "jk rowling",
+      "review": "nice book"
+    },
+    {
+      "id": "b27e",
+      "title": "Harry potter",
+      "author": "jk rowling",
+      "review": "nice book"
+    }
+  ]
+}
