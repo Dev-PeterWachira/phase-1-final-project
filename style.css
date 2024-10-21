@@ -14,3 +14,10 @@ body {
     justify-content: space-between;
     padding: 20px;
   }
+  section {
+    width: 30%;
+  }
+  
+  h2 {
+    color: #333;
+  }
