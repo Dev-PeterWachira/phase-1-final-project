@@ -41,3 +41,11 @@ function fetchBooks() {
         .catch(error => console.error('Error fetching book details:', error));
     }
   });
+  function displayDetails(book) {
+    const detailsDiv = document.getElementById('details');
+    detailsDiv.innerHTML = `
+      <h3>${book.title}</h3>
+      <p>Author: ${book.author}</p>
+      <p>Review: ${book.review}</p>
+    `;
+  }
