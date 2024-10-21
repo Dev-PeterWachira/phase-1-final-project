@@ -1,0 +1,6 @@
+{
+    "ramen": [
+      { "id": 1, "name": "Shoyu Ramen", "rating": 5 },
+      { "id": 2, "name": "Miso Ramen", "rating": 4 }
+    ]
+  }
