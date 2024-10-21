@@ -9,3 +9,8 @@ body {
     padding: 1em;
     text-align: center;
   }
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
