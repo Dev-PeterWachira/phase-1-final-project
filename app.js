@@ -9,7 +9,7 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
-const apiURL = 'https://exampleapi.com/books';
+const apiURL = 'https://www.googleapis.com/books';
 
 function fetchBooks() {
     fetch(apiURL)
