@@ -10,3 +10,10 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 const apiURL = 'https://exampleapi.com/books';
+
+function fetchBooks() {
+    fetch(apiURL)
+      .then(response => response.json())
+      .then(data => displayBooks(data))
+      .catch(error => console.error('Error fetching books:', error));
+  }
